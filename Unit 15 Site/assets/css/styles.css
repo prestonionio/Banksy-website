@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Fira Code Light;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+  color: inherit;
+
+} 
+
+header {
+  background-color: white;
+}
+
+ul{
+  text-align: center;
+  display: flex;    
+}
+    
+.logo {
+  padding-top: .5%;
+  text-align: center;  
+  font-size: 100px;
+  color: black;
+}
+
+.navigation{
+  display: flex;
+  margin-bottom: 10px;
+  padding-top: 7.5px;
+  padding-bottom: 15px;
+  padding-left: 42.25%;
+  gap: 50px;
+  color: black;
+}
+
+.hover {
+  transition: 0.3s ease;
+}
+
+.hover:hover {
+  font-size: 20px;
+}
+
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 35px;
+  background-image: url("../img/home_banner.png");
+  color: white;
+  text-align: center;
+}
+
+.slideshow-container {
+  max-width: 760px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Containers {
+  position: relative;
+  left: 20px;
+  display: none;
+}
+
+.slide-imgs {
+  width: 700px;
+  height: 500px;
+}
+
+.Back {
+  right: 757.5px;
+}
+
+.Back, .forward {
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+.forward {
+  left: 738px;
+  border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .forward:hover {
+  background-color: #000000DD;
+}
+
+.Info {
+  color: white;
+  background-color: #000000AA;
+  padding: 10px 14px;
+  font-size: 30px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 5px;
+  width: 88.4%;
+  text-align: center;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
